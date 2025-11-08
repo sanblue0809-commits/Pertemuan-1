@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛍️ Gaming Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .price {
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2ecc71;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛍️ Gaming store arena</h1>
+        <p>Temukan produk terbaik untuk Anda!</p>
+    </header>
+
+    <main class="container">
+        <!-- Produk 1 -->
+        <div class="product">
+            <img src="img/PcGaming1paket.avif" alt="Produk 1">
+            <div class="info">
+                <h3>PC Gaming 1 Paket</h3>
+                <p>Spek Gahar : AMD Ryzen 9, kartu grafis NVIDIA RTX 4090, 32 GB RAM DDR5, penyimpanan SSD NVMe 1-2 TB, dan power supply 850W</p>
+                <div class="price">Rp 50.000.000</div>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product">
+            <img src="img/MejaGAming.avif" alt="Produk 2">
+            <div class="info">
+                <h3>Meja Gaming</h3>
+                <p>Terbuat Dari Carbon Kualitas tinggi</p>
+                <div class="price">Rp 5.000.000</div>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product">
+            <img src="img/HpGaming.jpeg" alt="Produk 3">
+            <div class="info">
+                <h3>Handphone Gaming</h3>
+                <p> chipset kelas atas Snapdragon 8 Gen 5, RAM 8GB, penyimpanan 256GB, dan layar dengan refresh rate 240Hz</p>
+                <div class="price">Rp 18.000.000</div>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Gaming arena.
+    </footer>
+</body>
+</html>
